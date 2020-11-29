@@ -98,11 +98,11 @@ class Footer extends Component {
                             <p>© 2018 Martfury. All Rights Reserved</p>
                             <p>
                                 <span>We Using Safe Payment For:</span>
-                                <a href="#"><img src="/public/assets/img/payment-method/1.jpg" alt=""></img></a>
-                                <a href="#"><img src="/public/assets/img/payment-method/2.jpg" alt=""></img></a>
-                                <a href="#"><img src="/public/assets/img/payment-method/3.jpg" alt=""></img></a>
-                                <a href="#"><img src="/public/assets/img/payment-method/4.jpg" alt=""></img></a>
-                                <a href="#"><img src="/public/assets/img/payment-method/5.jpg" alt=""></img></a>
+                                <a href="#"><img src="assets/img/payment-method/1.jpg" alt=""></img></a>
+                                <a href="#"><img src="assets/img/payment-method/2.jpg" alt=""></img></a>
+                                <a href="#"><img src="assets/img/payment-method/3.jpg" alt=""></img></a>
+                                <a href="#"><img src="assets/img/payment-method/4.jpg" alt=""></img></a>
+                                <a href="#"><img src="assets/img/payment-method/5.jpg" alt=""></img></a>
                             </p>
                         </div>
                     </div>
@@ -128,9 +128,9 @@ class Footer extends Component {
                                 <div className="ps-product__header">
                                     <div className="ps-product__thumbnail" data-vertical="false">
                                         <div className="ps-product__images" data-arrow="true">
-                                            <div className="item"><img src="/public/assets/img/products/detail/fullwidth/1.jpg" alt=""></img></div>
-                                            <div className="item"><img src="/public/assets/img/products/detail/fullwidth/2.jpg" alt=""></img></div>
-                                            <div className="item"><img src="/public/assets/img/products/detail/fullwidth/3.jpg" alt=""></img></div>
+                                            <div className="item"><img src="assets/img/products/detail/fullwidth/1.jpg" alt=""></img></div>
+                                            <div className="item"><img src="assets/img/products/detail/fullwidth/2.jpg" alt=""></img></div>
+                                            <div className="item"><img src="assets/img/products/detail/fullwidth/3.jpg" alt=""></img></div>
                                         </div>
                                     </div>
                                     <div className="ps-product__info">
