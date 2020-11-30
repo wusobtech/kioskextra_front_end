@@ -101,7 +101,7 @@ class Header extends Component{
                                 </li>
                             </ul>
                             </div>
-                        </div><a className="ps-logo" href="index.html"><img src="assets/img/logo_light.png" alt="" /></a>
+                        </div><a className="ps-logo" href="/"><img src="https://res.cloudinary.com/wusobtech-com/image/upload/c_scale,h_32,w_156/v1606737957/pngs/kioskxtra_logo_lk1bfx.png" alt="" /></a>
                         </div>
                         <div className="header__center">
                         <form className="ps-form--quick-search" action="index.html" method="get">
@@ -145,7 +145,7 @@ class Header extends Component{
                             </div>
                             <div className="ps-block--user-header">
                             <div className="ps-block__left"><i className="icon-user" /></div>
-                            <div className="ps-block__right"><a href="my-account.html">Login</a><a href="my-account.html">Register</a></div>
+                            <div className="ps-block__right"><a href="/login">Login</a><a href="/register">Register</a></div>
                             </div>
                         </div>
                         </div>
@@ -169,24 +169,8 @@ class Header extends Component{
                             </li>
                         </ul>
                         <ul className="navigation__extra">
-                            <li><a href="#">Sell on KioskExtra</a></li>
+                            <li><a href="#">Sell on Martfury</a></li>
                             <li><a href="#">Tract your order</a></li>
-                            <li>
-                            <div className="ps-dropdown"><a href="#">US Dollar</a>
-                                <ul className="ps-dropdown-menu">
-                                <li><a href="#">Us Dollar</a></li>
-                                <li><a href="#">Euro</a></li>
-                                </ul>
-                            </div>
-                            </li>
-                            <li>
-                            <div className="ps-dropdown language"><a href="#"><img src="assets/img/flag/en.png" alt="" />English</a>
-                                <ul className="ps-dropdown-menu">
-                                <li><a href="#"><img src="assets/img/flag/germany.png" alt="" /> Germany</a></li>
-                                <li><a href="#"><img src="assets/img/flag/fr.png" alt="" /> France</a></li>
-                                </ul>
-                            </div>
-                            </li>
                         </ul>
                         </div>
                     </div>
@@ -199,29 +183,13 @@ class Header extends Component{
                     </div>
                     <div className="header__right">
                         <ul className="navigation__extra">
-                        <li><a href="#">Sell on KioskExtra</a></li>
-                        <li><a href="#">Tract your order</a></li>
-                        <li>
-                            <div className="ps-dropdown"><a href="#">US Dollar</a>
-                            <ul className="ps-dropdown-menu">
-                                <li><a href="#">Us Dollar</a></li>
-                                <li><a href="#">Euro</a></li>
-                            </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="ps-dropdown language"><a href="#"><img src="assets/img/flag/en.png" alt="" />English</a>
-                            <ul className="ps-dropdown-menu">
-                                <li><a href="#"><img src="assets/img/flag/germany.png" alt="" /> Germany</a></li>
-                                <li><a href="#"><img src="assets/img/flag/fr.png" alt="" /> France</a></li>
-                            </ul>
-                            </div>
-                        </li>
+                            <li><a href="#">Sell on KioskExtra</a></li>
+                            <li><a href="#">Tract your order</a></li>
                         </ul>
                     </div>
                     </div>
                     <div className="navigation--mobile">
-                    <div className="navigation__left"><a className="ps-logo" href="index.html"><img src="assets/img/logo_light.png" alt="" /></a></div>
+                    <div className="navigation__left"><a className="ps-logo" href="/"><img src="https://res.cloudinary.com/wusobtech-com/image/upload/c_scale,h_32,w_156/v1606737957/pngs/kioskxtra_logo_lk1bfx.png" alt="" /></a></div>
                     <div className="navigation__right">
                         <div className="header__actions">
                         <div className="ps-cart--mini"><a className="header__extra" href="#"><i className="icon-bag2" /><span><i>0</i></span></a>
@@ -248,7 +216,7 @@ class Header extends Component{
                         </div>
                         <div className="ps-block--user-header">
                             <div className="ps-block__left"><i className="icon-user" /></div>
-                            <div className="ps-block__right"><a href="my-account.html">Login</a><a href="my-account.html">Register</a></div>
+                            <div className="ps-block__left"><a href="/login">Login</a>/<a href="/register">Register</a></div>
                         </div>
                         </div>
                     </div>
