@@ -95,7 +95,7 @@ class Footer extends Component {
                             </p>
                         </div>
                         <div className="ps-footer__copyright">
-                            <p>© 2018 Martfury. All Rights Reserved</p>
+                            <p>© {(new Date().getFullYear())} KioskExtra. All Rights Reserved</p>
                             <p>
                                 <span>We Using Safe Payment For:</span>
                                 <a href="#"><img src="assets/img/payment-method/1.jpg" alt=""></img></a>
