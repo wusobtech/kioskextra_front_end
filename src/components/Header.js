@@ -120,7 +120,7 @@ class Header extends Component{
                         </form>
                         </div>
                         <div className="header__right">
-                        <div className="header__actions"><a className="header__extra" href="#"><i className="icon-chart-bars" /><span><i>0</i></span></a><a className="header__extra" href="#"><i className="icon-heart" /><span><i>0</i></span></a>
+                        <div className="header__actions"><a className="header__extra" href="#"><i className="icon-heart" /><span><i>0</i></span></a>
                             <div className="ps-cart--mini"><a className="header__extra" href="#"><i className="icon-bag2" /><span><i>0</i></span></a>
                             <div className="ps-cart__content">
                                 <div className="ps-cart__items">
