@@ -1,4 +1,5 @@
 import { React, Component} from 'react';
+import {Link} from 'react-router-dom'
 
 class Header extends Component{
     render(){
@@ -120,8 +121,8 @@ class Header extends Component{
                         </form>
                         </div>
                         <div className="header__right">
-                        <div className="header__actions"><a className="header__extra" href="#"><i className="icon-heart" /><span><i>0</i></span></a>
-                            <div className="ps-cart--mini"><a className="header__extra" href="#"><i className="icon-bag2" /><span><i>0</i></span></a>
+                        <div className="header__actions"><Link to="/wishlist" className="header__extra"><i className="icon-heart" /><span><i>0</i></span></Link>
+                            <div className="ps-cart--mini"><Link to="/cart" className="header__extra"><i className="icon-bag2" /><span><i>0</i></span></Link>
                             <div className="ps-cart__content">
                                 <div className="ps-cart__items">
                                 <div className="ps-product--cart-mobile">
@@ -169,8 +170,8 @@ class Header extends Component{
                             </li>
                         </ul>
                         <ul className="navigation__extra">
-                            <li><a href="#">Sell on Martfury</a></li>
-                            <li><a href="#">Tract your order</a></li>
+                            <li><Link to="/vendor_register">Sell on Martfury</Link></li>
+                            <li><Link to="/Order_tracking">Track your order</Link></li>
                         </ul>
                         </div>
                     </div>
