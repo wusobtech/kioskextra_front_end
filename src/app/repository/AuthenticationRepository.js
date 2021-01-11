@@ -39,6 +39,7 @@ export default class AuthenticationRepository {
             return this.updateLocalData(response);
         });
     }
+<<<<<<< HEAD
 
     async verifyEmail(formdata) {
         return await authenticationProvider.verifyEmail(formdata).then((response) => {
@@ -69,6 +70,8 @@ export default class AuthenticationRepository {
             return newResponse;
         });
     }
+=======
+>>>>>>> be8d524eb54a1af153daa5e1ecf8664e26709db3
 }
 
 

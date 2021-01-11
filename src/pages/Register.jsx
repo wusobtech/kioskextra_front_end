@@ -74,7 +74,7 @@ export default class Register extends Component{
                       <div className="ps-section__right">
                         <figure className="ps-section__desc">
                           <figcaption>Sign up today and you will be able to:</figcaption>
-                          <p>MartFury Buyer Protection has you covered from click to delivery. Sign up or sign in and you will be able to:</p>
+                          <p>KioskExtra Buyer Protection has you covered from click to delivery. Sign up or sign in and you will be able to:</p>
                           <ul className="ps-list">
                             <li><i className="icon-credit-card" /><span>SPEED YOUR WAY THROUGH CHECKOUT</span></li>
                             <li><i className="icon-clipboard-check" /><span>TRACK YOUR ORDERS EASILY</span></li>
