@@ -1,4 +1,4 @@
-import { AUTH_LOGIN, AUTH_ATTEMPT, AUTH_LOGOUT, REFRESH_STATE, UPDATE_SESSION_TIMEOUT, SET_CURRENT_PAGE } from "./types"
+import { AUTH_LOGIN, AUTH_ATTEMPT, AUTH_LOGOUT, UPDATE_ACCOUNT_STATUS, REFRESH_STATE, UPDATE_SESSION_TIMEOUT, SET_CURRENT_PAGE } from "./types"
 
 
 export const authLogin = (payload) => {
@@ -13,6 +13,11 @@ export const authLogout = (payload) => {
 
 export const authAttempt = (payload) => {
   return { type: AUTH_ATTEMPT, payload }
+};
+
+
+export const updateAccountStatus = (payload) => {
+  return { type: UPDATE_ACCOUNT_STATUS, payload }
 };
 
 

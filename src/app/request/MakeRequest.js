@@ -2,11 +2,9 @@ import Axios from "axios";
 import AppConfig from "../AppConfig";
 import EncryptionManager from "../helpers/EncryptionManager";
 import { authenticationHelper, methodsHelper } from "../helpers/HelperIndex";
-import Methods from "../helpers/Methods";
 import ParsedRequest from "./ParsedRequest";
 import RequestModel from "./RequestModel";
-const methods = new Methods;
-const encryptionManager = new EncryptionManager;
+const encryptionManager = new EncryptionManager();
 
 export default class MakeRequest {
     url = "";
@@ -43,8 +41,8 @@ export default class MakeRequest {
 
     async getRequest(withToken = true, formData = null) {
         let url = this.url;
-        if (!methods.empty(formData)) {
-            url = methods.serialize(formData, url);
+        if (!methodsHelper.empty(formData)) {
+            url = methodsHelper.serialize(formData, url);
         }
         return await Axios.get(url, await this.generateHeader(withToken)).then(
             (response) => this.parseSuccessResponse(response)
@@ -71,7 +69,7 @@ export default class MakeRequest {
     }
 
     async parseSuccessResponse(response) {
-        let headers = methods.default(response.config.headers.Encryption, []);
+        let headers = methodsHelper.default(response.config.headers.Encryption, []);
         if (headers.includes("react_encryption")) {
             response = await (await encryptionManager.decrypt(response.data)).plainText;
             console.log(response);

@@ -1,7 +1,3 @@
-import MakeRequest from "../request/MakeRequest";
-import { requiredInputField } from "./Objects";
-
-
 export default class FormManager {
     initalizeFormData = (formElementId, onlyValues = false) => {
         let data = this.getAllInputFields(formElementId);
@@ -28,10 +24,10 @@ export default class FormManager {
     }
 
     showHidePassword = (target, targetType = "id") => {
-        let element = targetType == "id" ? document.getElementById(target) : document.getElementsByClassName(target);
+        let element = targetType === "id" ? document.getElementById(target) : document.getElementsByClassName(target);
         if (element) {
             let fieldType = element.getAttribute("type");
-            if (fieldType == "password") {
+            if (fieldType === "password") {
                 element.setAttribute("type", "text");
             }
             else {

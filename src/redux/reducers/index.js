@@ -1,12 +1,13 @@
 import AppConstants from "../../app/helpers/AppContants";
 import { authenticationHelper } from "../../app/helpers/HelperIndex";
 import { ACTIVE_PAGES } from "../../components/includes/GuardedRoute";
-import { AUTH_LOGIN, AUTH_LOGOUT  , REFRESH_STATE, UPDATE_SESSION_TIMEOUT, SET_CURRENT_PAGE} from "../actions/types";
+import { AUTH_LOGIN, AUTH_LOGOUT  , REFRESH_STATE, UPDATE_SESSION_TIMEOUT, UPDATE_ACCOUNT_STATUS, SET_CURRENT_PAGE} from "../actions/types";
 
 const initialState = {
     ACTIVE_PAGE: ACTIVE_PAGES.HOME,
     AUTH_STATUS: authenticationHelper.isLoggedIn(),
     AUTH_DATA: {},
+    ACCOUNT_STATUS: AppConstants.UNDEFINED,
     SESSION_TIMEOUT: authenticationHelper.getSessionTimeout()
   };
   
@@ -34,6 +35,13 @@ const initialState = {
         AUTH_STATUS: false ,
         AUTH_DATA: {} , 
         ACCOUNT_STATUS: AppConstants.UNDEFINED,
+      }
+    }
+
+    if (action.type === UPDATE_ACCOUNT_STATUS) {
+      return {
+        ...state,
+        ACCOUNT_STATUS: action.payload , 
       }
     }
 
