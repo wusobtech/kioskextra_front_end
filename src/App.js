@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
+import Product_details from './pages/Product_details'
 import Vendor_Register from './pages/Vendor_Register';
 import Order_tracking from './pages/Order_tracking';
 
@@ -26,6 +27,7 @@ function App() {
               <Route  path="/cart" component={Cart}/>
               <Route  path="/vendor_register" component={Vendor_Register}/>
               <Route  path="/order_tracking" component={Order_tracking}/>
+              <Route  path="/product_details" component={Product_details}/>
             </Switch>
             <Footer />
         </Router>
