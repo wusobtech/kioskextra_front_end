@@ -16,12 +16,12 @@ export default class ApiRoutes {
     static resendEmailVerification = this.base_url + '/verification-pin';
 
 
-    // Account
-    static banksList = this.base_url + '/list-of-banks';
+    // Home page
+    static categoriesList = this.base_url + '/home/product-categories';
 
-    static verifyBank = this.base_url + '/verify-bank';
+    static sliderAndImages = this.base_url + '/home/slider-and-images';
 
-    static updateBank = this.base_url + '/update-bank';
+    static productsList = this.base_url + '/products/list';
 
     static accountSettings = this.base_url + '/account-settings';
 
